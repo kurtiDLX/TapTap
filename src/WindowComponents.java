@@ -27,6 +27,14 @@ public class WindowComponents extends JFrame {
             try {
                 numAdd += 1;
                 clickResult.setText("click: " + numAdd);
+
+                if (numAdd >= 10) {
+                    click.setIcon(new ImageIcon("src/tomatoTwo.png"));
+                }
+
+                 if (numAdd >= 50){
+                     click.setIcon(new ImageIcon("src/tomatoFinal.png"));
+                 }
             }catch (Exception ex){}
                 });
 
